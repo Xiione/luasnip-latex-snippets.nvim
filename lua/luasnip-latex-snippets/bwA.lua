@@ -29,6 +29,7 @@ function M.retrieve(not_math)
     parse_snippet({ trig = "case", name = "cases" }, "\\begin{cases}\n\t$1\n\\end{cases}"),
 
     parse_snippet({ trig = "pfs", name = "math proof step" }, "$$ $1 $$&$2 \\\\\\\\$0"),
+    parse_snippet({ trig = "pfls", name = "math proof last step" }, "$$ $1 $$&$0"),
 
     s({ trig = "bigfun", name = "Big function" }, {
       t({ "\\begin{align*}", "\t" }),
