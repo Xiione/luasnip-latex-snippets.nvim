@@ -28,7 +28,7 @@ function M.retrieve(not_math)
     parse_snippet({ trig = "beg", name = "begin{} / end{}" }, "\\begin{$1}\n\t$0\n\\end{$1}"),
     parse_snippet({ trig = "case", name = "cases" }, "\\begin{cases}\n\t$1\n\\end{cases}"),
 
-    parse_snippet({ trig = "pfs", name = "math proof step" }, "$$ $1 $$&$2 \\\\\\\\$0"),
+    parse_snippet({ trig = "pfs", name = "math proof step" }, "$$ $1 $$& $2 \\\\\\\\$0"),
     parse_snippet({ trig = "pfls", name = "math proof last step" }, "$$ $1 $$&$0"),
 
     s({ trig = "bigfun", name = "Big function" }, {
