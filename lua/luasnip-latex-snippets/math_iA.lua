@@ -138,6 +138,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "tt", name = "text" }, "\\text{$1}$0"),
 
     parse_snippet({ trig = "xx", name = "cross" }, "\\times "),
+    parse_snippet({ trig = "oo", name = "bloop" }, "\\circ "),
 
     parse_snippet({ trig = "**", name = "cdot", priority = 100 }, "\\cdot "),
 
